@@ -1,6 +1,8 @@
-# A nice react template that I like to use for my personal projects
+# A better metar app
 
-This template includes
+Technologies used:
+
+- [OpenWeather](https://openweathermap.org/api/geocoding-api)
 
 - [Vite](https://vitejs.dev/)
 - [React](https://react.dev/)
