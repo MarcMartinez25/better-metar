@@ -1,14 +1,22 @@
 import { useState } from 'react'
+import Footer from './Footer/Footer'
+import EmptyState from './MetarCard/EmptyState';
+import MetarCard from './MetarCard/MetarCard';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [metarList, setMetarList] = useState([]);
 
   return (
-    <div>
-      <h1 className="text-3xl text-blue-800 font-bold">
-        A good template!
-      </h1>
-    </div>
+    <div className="container flex flex-col h-screen">
+      <div className="flex-grow">
+        {metarList.length > 0 ? (
+          <MetarCard />
+        ) : (
+          <EmptyState />
+        )}
+      </div>
+      <Footer />
+    </div >
   )
 }
 
