@@ -7,13 +7,17 @@ const Footer = () => {
     <div className="container text-center my-2 py-4">
       <ul className="list-none flex justify-center text-zinc-400">
         <li>
-          <FontAwesomeIcon icon={faGithub} />
+          <a href="https://github.com/MarcMartinez25" target="_blank" className="hover:text-blue-600">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
         </li>
         <li className="px-2">
-          Developed By <a href="http://marcomartinez.dev" target="_blank" className="hover:text-blue-600">Marco Martinez</a>
+          Developed By <a href="https://marcomartinez.dev" target="_blank" className="hover:text-blue-600">Marco Martinez</a>
         </li>
         <li>
-          <FontAwesomeIcon icon={faLinkedin} />
+          <a href="https://www.linkedin.com/in/marcmartinez25/" target="_blank" className="hover:text-blue-600">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
         </li>
       </ul>
     </div>
