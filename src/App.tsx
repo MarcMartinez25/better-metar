@@ -4,10 +4,10 @@ import EmptyState from './MetarCard/EmptyState';
 import MetarCard from './MetarCard/MetarCard';
 import Search from './Search/Search';
 import TitleBar from './TitleBar/TitleBar';
+import { Airport } from './types/Airport';
 
-function App() {
-  // fix this
-  const [airportList, setAirportList] = useState([]);
+const App = () => {
+  const [airportList, setAirportList] = useState<Airport[]>([]);
 
   return (
     <div className="container flex flex-col h-screen">
