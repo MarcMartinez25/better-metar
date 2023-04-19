@@ -17,7 +17,7 @@ const App = () => {
         {airportList.length > 0 ? (
           <MetarCard />
         ) : (
-          <EmptyState />
+          <EmptyState count={airportList.length} />
         )}
       </div>
       <Footer />
