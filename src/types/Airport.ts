@@ -12,6 +12,6 @@ export interface Airport {
   relativeHumidity: number,
   visibility: string,
   windSpeed: number,
-  windDirection: number,
-  clouds: string
+  windDirection: number
+  // clouds: string
 }

@@ -9,8 +9,8 @@ const SubmintButton = () => {
       p-2
       h-12
       text-zinc-400
-    border-blue-500
-    hover:bg-blue-500
+    border-blue-600
+    hover:bg-blue-600
     hover:text-white"
     >
       Search

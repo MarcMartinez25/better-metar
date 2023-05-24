@@ -6,15 +6,16 @@ import { getMetarDataByIcaoCode } from "./helpers"
 
 type Prop = {
   airportList: Airport[],
-  setAirportList: (airportList: Airport[]) => void
+  setAirportList: (airportList: Airport[]) => void,
+  setShowModal: (showModal: string) => void
 }
 
-const Search = ({ airportList, setAirportList }: Prop) => {
+const Search = ({ airportList, setAirportList, setShowModal }: Prop) => {
   const [icaoCode, setIcaoCode] = useState<string>("");
 
   const callEndpoint = (event: any) => {
     event.preventDefault();
-    getMetarDataByIcaoCode(icaoCode, airportList, setAirportList);
+    getMetarDataByIcaoCode(icaoCode, airportList, setAirportList, setShowModal);
   }
 
   return (

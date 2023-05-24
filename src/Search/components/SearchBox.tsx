@@ -14,7 +14,7 @@ const SearchBox = ({ icaoCode, setIcaoCode }: Props) => {
         type='text'
         required
         placeholder="Enter an ICAO Code"
-        className="p-2 mr-2 border-2 rounded border-blue-500 h-12"
+        className="p-2 mr-2 border-2 rounded border-blue-600 uppercase h-12"
       >
       </input>
       <p className='
@@ -23,7 +23,7 @@ const SearchBox = ({ icaoCode, setIcaoCode }: Props) => {
         text-zinc-300 
         ml-2 
         mt-1'>
-        Ex. KAUS, KHOU, 50R, EGLL
+        Ex. KOKC, EGLL, KJFK
       </p>
     </div>
   )
