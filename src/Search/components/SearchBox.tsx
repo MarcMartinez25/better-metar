@@ -13,6 +13,7 @@ const SearchBox = ({ icaoCode, setIcaoCode }: Props) => {
         onChange={(e) => setIcaoCode(e.target.value)}
         type='text'
         required
+        maxLength={4}
         placeholder="Enter an ICAO Code"
         className="p-2 mr-2 border-2 rounded border-blue-600 uppercase h-12"
       >

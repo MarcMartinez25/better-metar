@@ -17,6 +17,9 @@ export const getMetarDataByIcaoCode = (
     axios.get(url, AXIOS_OPTIONS).then((res) => {
       const newAirport = buildAirport(res.data.data[0]);
       setAirportList([...airportList, newAirport]);
+    }).catch(error => {
+      setShowModal("Unable to retrieve Metar Data.");
+      console.error(error);
     });
   } else {
     setShowModal("The Metar data for this ICAO code has already been retrieved");
