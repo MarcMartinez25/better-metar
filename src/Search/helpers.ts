@@ -2,7 +2,7 @@ import axios from 'axios'
 import { Airport } from '../types/Airport'
 
 const AXIOS_OPTIONS = {
-  headers: { "X-API-Key": "f419ee367c914e7b94134a009f" }
+  headers: { "X-API-Key": "INSERT-API-KEY-HERE" }
 }
 
 export const getMetarDataByIcaoCode = (
